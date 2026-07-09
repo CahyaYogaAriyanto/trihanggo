@@ -5,6 +5,7 @@
 
 import React from 'react';
 import { Phone, Mail, MapPin, Clock, ArrowUp, Facebook, Instagram, Linkedin, Youtube, ExternalLink } from 'lucide-react';
+import Logo from '../assets/images/Logo_Trihanggo.png';
 
 interface FooterProps {
   onScrollToSection: (sectionId: string) => void;
@@ -33,19 +34,8 @@ export const Footer: React.FC<FooterProps> = ({ onScrollToSection }) => {
           {/* Column 1: Brand Info (4 Columns) */}
           <div className="lg:col-span-4 space-y-6 text-left">
             <div className="flex items-center gap-3 cursor-pointer group" onClick={handleScrollToTop}>
-              <div className="w-10 h-10 rounded-xl bg-red-600 flex items-center justify-center relative overflow-hidden shadow-md">
-                <div className="absolute inset-0 bg-gradient-to-tr from-black/40 to-transparent" />
-                <div className="w-8 h-1 bg-white rotate-45 transform translate-y-[-2px] translate-x-[-1px] rounded" />
-                <div className="w-8 h-1 bg-white -rotate-45 transform translate-y-[4px] translate-x-[2px] rounded absolute" />
-              </div>
-              <div>
-                <span className="text-xl font-bold tracking-tight uppercase text-white block">
-                  Trihanggo
-                </span>
-                <span className="block text-[8px] font-mono tracking-[0.25em] text-red-500 font-bold -mt-1 uppercase">
-                  Printing Systems
-                </span>
-              </div>
+              
+              <img src={Logo} alt="Trihanggo Logo" className="h-10 w-auto" />
             </div>
 
             <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
@@ -112,9 +102,9 @@ export const Footer: React.FC<FooterProps> = ({ onScrollToSection }) => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" />
                 <span>
-                  PT. Trihanggo Printing Systems Tbk.<br />
-                  Jl. Trihanggo No. 45, Gamping,<br />
-                  Sleman, D.I. Yogyakarta 55291
+                  Perumahan Poligriya Permai Buha<br />
+                  Blok C Cempaka No 21<br />
+                  (Belakang Kantor Pusat Politeknik Negeri Manado)
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -162,9 +152,7 @@ export const Footer: React.FC<FooterProps> = ({ onScrollToSection }) => {
               <ExternalLink className="w-3 h-3" />
             </a>
           </div>
-
         </div>
-
         {/* Footer Bottom Portion */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
           <div className="text-left">

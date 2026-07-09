@@ -5,13 +5,18 @@
 
 import { Product, ProductCategory, Milestone, Partner, Testimonial, FeatureBlock } from './types';
 
-// Let's import the generated asset paths
-const HERO_IMAGE = '/src/assets/images/trihanggo_hero_1783583587771.jpg';
-const ABOUT_IMAGE = '/src/assets/images/trihanggo_about_1783583606004.jpg';
-const PRINTER_IMAGE = '/src/assets/images/trihanggo_printer_1783583620340.jpg';
-const INK_IMAGE = '/src/assets/images/trihanggo_ink_1783583633164.jpg';
+// Import local images so Vite can process and hash them correctly at build time
+import HERO_IMAGE from './assets/images/trihanggo_hero_1783583587771.jpg';
+import ABOUT_IMAGE from './assets/images/trihanggo_about_1783583606004.jpg';
+import PRINTER_IMAGE from './assets/images/trihanggo_printer_1783583620340.jpg';
+import INK_IMAGE from './assets/images/trihanggo_ink_1783583633164.jpg';
 
-export { HERO_IMAGE, ABOUT_IMAGE };
+import HERO_IMAGE from './assets/images/trihanggo_hero_1783583587771.jpg';
+import ABOUT_IMAGE from './assets/images/trihanggo_about_1783583606004.jpg';
+import PRINTER_IMAGE from './assets/images/trihanggo_printer_1783583620340.jpg';
+import INK_IMAGE from './assets/images/trihanggo_ink_1783583633164.jpg';
+
+export { HERO_IMAGE, ABOUT_IMAGE, PRINTER_IMAGE, INK_IMAGE };
 
 export const PRODUCT_CATEGORIES: ProductCategory[] = [
   {
