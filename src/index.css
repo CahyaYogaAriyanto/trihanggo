@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@200;400;700;800&family=Poppins:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Manrope", "Poppins", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-red: #C8102E;
+  --color-brand-dark: #1A1A1A;
+  --color-brand-light: #F5F5F5;
+}
+
+/* Custom smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Artistic Flair custom theme styles */
+.diagonal-accent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background: #C8102E;
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+  z-index: 0;
+  opacity: 0.95;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.card-shadow {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.layered-element {
+  position: absolute;
+  pointer-events: none;
+}
+
+.hero-text {
+  line-height: 0.85;
+  letter-spacing: -0.03em;
+}

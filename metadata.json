@@ -1,0 +1,6 @@
+{
+  "name": "Trihanggo Printing Solutions",
+  "description": "Premium industrial printing equipment, digital printing solutions, inks, spare parts, and accessories by Trihanggo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
