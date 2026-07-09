@@ -129,7 +129,7 @@ export const FEATURED_PRODUCTS: Product[] = [
     id: 'vertex-t100-flatbed',
     name: 'Trihanggo Vertex T100 UV Flatbed',
     category: 'digital-printing',
-    image: 'https://images.unsplash.com/photo-1616400619175-5ebd30090ac1?auto=format&fit=crop&w=800&q=80',
+    image: 'https://static.vecteezy.com/system/resources/previews/024/654/893/large_2x/modern-printing-press-produces-multi-colored-printouts-accurately-generated-by-ai-free-photo.jpg',
     shortDesc: 'Architectural-grade 2.5m x 1.3m UV flatbed printer for printing on glass, wood, metals, and acrylics.',
     longDesc: 'The Vertex T100 is engineered for high-value rigid media application markets. It incorporates an zoned vacuum bed that secures heavy substrates flawlessly. Capable of printing high-density white ink bases and luxurious high-gloss spot varnish finishes simultaneously in a single pass.',
     specs: [

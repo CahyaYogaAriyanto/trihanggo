@@ -113,7 +113,7 @@ export const Footer: React.FC<FooterProps> = ({ onScrollToSection }) => {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-red-500 flex-shrink-0" />
-                <span>support@trihanggo.co.id</span>
+                <span>trihanggo0@gmail.com</span>
               </li>
               <li className="flex items-center gap-3">
                 <Clock className="w-4 h-4 text-red-500 flex-shrink-0" />
@@ -132,7 +132,7 @@ export const Footer: React.FC<FooterProps> = ({ onScrollToSection }) => {
             <div className="w-full h-40 rounded-2xl overflow-hidden border border-white/10 shadow-lg relative bg-white/5">
               <iframe
                 title="Trihanggo HQ Location Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15812.164344445381!2d110.33405786317208!3d-7.785465228148971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5806b72a4401%3A0xe7c61dfa14436577!2sTrihanggo%2C%20Gamping%2C%20Sleman%20Regency%2C%20Special%20Region%20of%20Yogyakarta!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127628.0226416957!2d124.62859343558692!3d1.540809849416565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32879ef9ffb30fd3%3A0x3030bfbcaf77280!2sManado%2C%20Manado%20City%2C%20North%20Sulawesi!5e0!3m2!1sen!2sid!4v1783588687363!5m2!1sen!2sid"
                 width="100%"
                 height="100%"
                 style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg) brightness(95%) contrast(90%)' }}
