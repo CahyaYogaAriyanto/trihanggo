@@ -129,7 +129,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuote, onScrollToSection }) =>
               Pro-X 500 Industrial
             </h3>
             <p className="text-xs text-gray-400 font-medium mb-4 leading-relaxed">
-              Digital wide-format inkjet series for continuous, high-speed textile, banner, and vinyl industrial printing.
+             Seri mesin digital wide-format inkjet yang dirancang untuk pencetakan tekstil, banner, dan vinyl dengan kecepatan tinggi serta performa yang stabil untuk kebutuhan produksi industri.
             </p>
 
             <button
@@ -150,7 +150,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuote, onScrollToSection }) =>
                 Genuine Inks
               </div>
               <div className="font-display font-bold text-xs leading-snug">
-                Premium eco-solvent & sublimation color profiles.
+                Profil warna premium untuk tinta eco-solvent dan sublimasi.
               </div>
             </div>
 
@@ -164,7 +164,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuote, onScrollToSection }) =>
                 </svg>
               </div>
               <div className="font-display font-bold text-xs text-brand-dark">
-                Certified Spares for Every Machine
+                Sparepart Original untuk Berbagai Jenis Mesin
               </div>
             </div>
 

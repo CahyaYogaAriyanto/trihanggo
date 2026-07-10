@@ -65,12 +65,12 @@ export const Categories: React.FC<CategoriesProps> = ({ onSelectCategory }) => {
               </span>
             </div>
             <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-display font-extrabold tracking-tight leading-[1.1]">
-              Explore Our Core <br />
-              Product Categories
+              Jelajahi Berbagai <br />
+              Kategori Produk Kami
             </h2>
           </div>
           <p className="text-gray-400 text-sm md:text-base max-w-md font-sans">
-            Trihanggo houses an end-to-end industrial architecture, supplying top-tier machinery alongside certified engineering spares and ink chemistries.
+           Trihanggo menyediakan berbagai solusi lengkap untuk industri percetakan, mulai dari mesin digital printing, mesin finishing, sparepart original, hingga consumable berkualitas untuk mendukung produktivitas bisnis Anda.
           </p>
         </div>
 

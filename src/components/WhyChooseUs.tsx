@@ -83,7 +83,7 @@ export const WhyChooseUs: React.FC = () => {
                 </span>
               </div>
               <h2 className="text-white text-3xl sm:text-4xl font-display font-extrabold tracking-tight leading-none">
-                Core Competitive Advantages
+                Keunggulan Utama Kami
               </h2>
             </div>
 

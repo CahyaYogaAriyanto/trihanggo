@@ -150,22 +150,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch, onOpenQuote, onScr
             >
               <div>
                 <div className="flex items-center justify-between border-b border-white/10 pb-6 mb-8">
-                  <div>
-                    <span className="text-white font-sans font-bold text-lg tracking-tight uppercase">
-                      Trihanggo
-                    </span>
-                    <span className="block text-[8px] font-mono tracking-widest text-red-500 font-bold uppercase">
-                      Industrial Printing
-                    </span>
-                  </div>
-                  <button
-                    onClick={() => setMobileMenuOpen(false)}
-                    className="p-1.5 rounded-full hover:bg-white/5 text-white/60"
-                  >
-                    <X className="w-5 h-5" />
-                  </button>
                 </div>
-
                 {/* Nav Links */}
                 <div className="flex flex-col gap-5">
                   {navItems.map((item) => (
