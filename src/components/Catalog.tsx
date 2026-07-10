@@ -50,14 +50,14 @@ export const Catalog: React.FC<CatalogProps> = ({
           <div className="flex items-center gap-3 justify-center">
             <div className="w-12 h-[1px] bg-brand-red" />
             <span className="text-xs font-bold uppercase tracking-[0.4em] text-brand-red font-display">
-              Certified Machinery Catalog
+              Katalog Mesin Bersertifikasi
             </span>
           </div>
           <h2 className="text-brand-dark text-3xl sm:text-4xl md:text-5xl font-display font-extrabold tracking-tight">
             High-Performance Systems
           </h2>
           <p className="text-gray-500 text-sm md:text-base leading-relaxed">
-            Engineered to handle massive substrates, high throughput requirements, and demanding industrial cycles with zero calibration loss.
+           Dirancang untuk menangani berbagai media berukuran besar, kebutuhan produksi berkapasitas tinggi, serta siklus operasional industri yang berat, dengan akurasi dan performa yang tetap konsisten tanpa kehilangan kalibrasi.
           </p>
         </div>
 

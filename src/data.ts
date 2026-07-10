@@ -8,249 +8,348 @@ import { Product, ProductCategory, Milestone, Partner, Testimonial, FeatureBlock
 // Import local images so Vite can process and hash them correctly at build time
 import HERO_IMAGE from './assets/images/trihanggo_hero_1783583587771.jpg';
 import ABOUT_IMAGE from './assets/images/trihanggo_about_1783583606004.jpg';
-import PRINTER_IMAGE from './assets/images/trihanggo_printer_1783583620340.jpg';
+import PRINTER_IMAGE from './assets/images/mesinDIgitalprinting.png';
 import INK_IMAGE from './assets/images/trihanggo_ink_1783583633164.jpg';
+import KonicaImage from './assets/images/KonicaMinoltaC3070-C3080.png';
+import LogoMesinC30 from './assets/images/mesin_pemotong_kertas.png';
+import JilidPanas from './assets/images/jilid_panas.png';
+import HarakeImage from './assets/images/HirarkeImage.png';
+import OPCDrumXerox  from './assets/images/sparepart.png';
+import Corporate from './assets/brand/Corporate.png';
+import Kyocera from './assets/brand/kyocera.svg';
+import Phoseon from './assets/brand/phoseon.png';
+import Ricoh from './assets/brand/ricoh.svg';
+import Mutoh from './assets/brand/mutoh.png';
+import xrp from './assets/brand/xrp.png';
 
-import HERO_IMAGE from './assets/images/trihanggo_hero_1783583587771.jpg';
-import ABOUT_IMAGE from './assets/images/trihanggo_about_1783583606004.jpg';
-import PRINTER_IMAGE from './assets/images/trihanggo_printer_1783583620340.jpg';
-import INK_IMAGE from './assets/images/trihanggo_ink_1783583633164.jpg';
 
 export { HERO_IMAGE, ABOUT_IMAGE, PRINTER_IMAGE, INK_IMAGE };
 
 export const PRODUCT_CATEGORIES: ProductCategory[] = [
   {
-    id: 'industrial-printers',
-    title: 'Industrial Printers',
-    description: 'Heavy-duty roll-to-roll and single-pass printers designed for uninterrupted high-volume commercial production.',
+    id: 'digital-printing',
+    title: 'Mesin Digital Printing',
+    description: 'Mesin digital printing multifungsi berkualitas tinggi untuk print, copy, scan dengan teknologi laser dan LED digital.',
     image: PRINTER_IMAGE,
     icon: 'Printer',
-    count: '12 Models',
+    count: '15+ Model',
     size: 'large'
   },
   {
-    id: 'digital-printing',
-    title: 'Digital Printing Machines',
-    description: 'Versatile high-precision flatbed UV and textile digital machines for custom applications on rigid and flexible media.',
-    image: 'https://images.unsplash.com/photo-1616400619175-5ebd30090ac1?auto=format&fit=crop&w=800&q=80',
-    icon: 'Cpu',
-    count: '8 Models',
+    id: 'paper-cutting',
+    title: 'Mesin Pemotong Kertas',
+    description: 'Mesin pemotong kertas hidrolik dan elektrik dengan presisi tinggi untuk berbagai ukuran kertas dan produksi skala besar.',
+    image: LogoMesinC30,
+    icon: 'Layers',
+    count: '10+ Model',
     size: 'medium'
   },
   {
-    id: 'ink-consumables',
-    title: 'Ink & Consumables',
-    description: 'Eco-solvent, UV-curable, and sublimation inks engineered for vibrant color gamuts, adhesion, and prolonged printhead life.',
-    image: INK_IMAGE,
-    icon: 'Droplets',
-    count: '45 Products',
+    id: 'binding-machines',
+    title: 'Mesin Jilid Panas',
+    description: 'Mesin jilid panas digital elektrik dengan panel kontrol intuitif untuk dokumen profesional dan presentasi berkualitas.',
+    image: JilidPanas,
+    icon: 'Cpu',
+    count: '8 Model',
     size: 'medium'
+  },
+  {
+    id: 'sticker-cutting',
+    title: 'Mesin Stiker Cutting',
+    description: 'Mesin cutting stiker presisi tinggi dengan kecepatan potong hingga 800 mm/s untuk berbagai jenis material.',
+    image: HarakeImage,
+    icon: 'Settings',
+    count: '5 Model',
+    size: 'small'
   },
   {
     id: 'spare-parts',
-    title: 'Spare Parts',
-    description: 'Genuine certified industrial components including high-density printheads, filters, dampers, capping stations, and servo motors.',
-    image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80',
-    icon: 'Settings',
-    count: '150+ Parts',
-    size: 'small'
-  },
-  {
-    id: 'accessories',
-    title: 'Printing Accessories',
-    description: 'Professional colorimeters, cutting plotters, hot laminators, and roll-feed systems to complete your end-to-end workflow.',
-    image: 'https://images.unsplash.com/photo-1513829096999-4978602294fc?auto=format&fit=crop&w=800&q=80',
-    icon: 'Layers',
-    count: '24 Items',
-    size: 'small'
-  },
-  {
-    id: 'printing-solutions',
-    title: 'Printing Solutions',
-    description: 'Custom turnkey setups, advanced ICC color profiling integrations, and automated production queue systems.',
-    image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80',
+    title: 'Spare Part',
+    description: 'Suku cadang original dan berkualitas untuk berbagai tipe mesin guna menjaga performa dan keandalan operasional.',
+    image: INK_IMAGE,
     icon: 'Workflow',
-    count: '6 Solutions',
+    count: '100+ Item',
+    size: 'small'
+  },
+  {
+    id: 'rental-service',
+    title: 'Rental Mesin',
+    description: 'Layanan penyewaan mesin dengan periode fleksibel untuk membantu memenuhi kebutuhan produksi secara efisien.',
+    image: 'https://images.unsplash.com/photo-1554774853-b415df9eeb92?auto=format&fit=crop&w=800&q=80',
+    icon: 'Droplets',
+    count: 'Tersedia',
     size: 'medium'
   }
 ];
 
 export const FEATURED_PRODUCTS: Product[] = [
   {
-    id: 'apex-9000-pro',
-    name: 'Trihanggo Apex-9000 Pro',
-    category: 'industrial-printers',
-    image: PRINTER_IMAGE,
-    shortDesc: 'Ultra-speed 3.2m industrial roll-to-roll UV-LED printing system built for 24/7 heavy-duty operations.',
-    longDesc: 'The Trihanggo Apex-9000 Pro represents the pinnacle of large-format industrial printing. Outfitted with premium multi-array industrial printheads, it handles demanding substrates with exquisite precision. Features double-row LED curing arrays, secondary tank heating, and an advanced negative pressure system to prevent banding at high production speeds.',
-    specs: [
-      { label: 'Print Width', value: '3.2 Meters (126 inches)' },
-      { label: 'Printhead Type', value: 'Industrial Piezo (4-8 Heads configuration)' },
-      { label: 'Max Speed', value: '180 m²/hour' },
-      { label: 'Max Resolution', value: '1200 x 1440 DPI' },
-      { label: 'Curing Technology', value: 'Dual Water-Cooled UV-LED' },
-      { label: 'Media Handling', value: 'Heavy Roll-to-Roll Pneumatic Tension System' }
-    ],
-    features: [
-      'Automatic media width sensing and thickness adjustment',
-      'Anti-static bar and crash sensors on the carriage',
-      'Smart multi-stage drying system',
-      'High-grade linear guide rail with dual linear motor system'
-    ],
-    tags: ['Best Seller', 'UV-LED', 'Industrial Scale'],
-    isFeatured: true,
-    status: 'In Stock'
-  },
-  {
-    id: 'chromaflow-max-inks',
-    name: 'ChromaFlow Max HD Inks',
-    category: 'ink-consumables',
-    image: INK_IMAGE,
-    shortDesc: 'High-density, low-odor industrial UV-LED and Eco-Solvent inks with unmatched adhesion.',
-    longDesc: 'Formulated specifically for high-speed printheads, Trihanggo ChromaFlow Max HD inks deliver exceptional color intensity, outstanding rub resistance, and prolonged outdoor lightfastness. Engineered with ultra-fine pigment dispersions to prevent nozzle clogging and extend printhead operational life significantly.',
-    specs: [
-      { label: 'Ink Type', value: 'Premium UV-LED & Eco-Solvent options' },
-      { label: 'Color Gamut', value: 'Cyan, Magenta, Yellow, Black, Light Cyan, Light Magenta, White, Varnish' },
-      { label: 'Outdoor Durability', value: 'Up to 3 Years without lamination' },
-      { label: 'Viscosity', value: 'Stable 8.2 - 9.4 cPs at operating temperature' },
-      { label: 'Compliance', value: 'REACH, RoHS, Greenguard Gold Certified' }
-    ],
-    features: [
-      'Instant curing for fast-turnaround jobs',
-      'Extremely low VOC formulation for environmental safety',
-      'Flexible formula prevents ink cracking on stretched materials',
-      'Optimized pigment size ensuring uniform solid color fills'
-    ],
-    tags: ['Premium Eco', 'CMYK + W + V', 'Certified'],
-    isFeatured: true,
-    status: 'Available'
-  },
-  {
-    id: 'vertex-t100-flatbed',
-    name: 'Trihanggo Vertex T100 UV Flatbed',
+    id: 'xerox-c3375',
+    name: 'Xerox Office C3375 / C5575 / C7775',
     category: 'digital-printing',
-    image: 'https://static.vecteezy.com/system/resources/previews/024/654/893/large_2x/modern-printing-press-produces-multi-colored-printouts-accurately-generated-by-ai-free-photo.jpg',
-    shortDesc: 'Architectural-grade 2.5m x 1.3m UV flatbed printer for printing on glass, wood, metals, and acrylics.',
-    longDesc: 'The Vertex T100 is engineered for high-value rigid media application markets. It incorporates an zoned vacuum bed that secures heavy substrates flawlessly. Capable of printing high-density white ink bases and luxurious high-gloss spot varnish finishes simultaneously in a single pass.',
+    image: PRINTER_IMAGE,
+    shortDesc: 'Mesin multifungsi laser colour untuk print, copy, scan dengan kecepatan hingga 75 ppm dan resolusi 1200 x 2400 dpi.',
+    longDesc: 'Xerox seri Office adalah solusi all-in-one yang sempurna untuk kantor dan sekolah. Dengan teknologi Laser Colour Multifunction Printer, mendukung ukuran kertas A5-A3, kecepatan cetak hingga 75 halaman per menit, dan kapasitas kertas maksimum 5.140 lembar. Dilengkapi dengan touchscreen colour panel, mobile printing (AirPrint, Mopria, Xerox Print Service), dan keamanan data encryption.',
     specs: [
-      { label: 'Print Size', value: '2500 mm x 1300 mm (Rigid Media)' },
-      { label: 'Max Thickness', value: '100 mm (Automatic height measurement)' },
-      { label: 'Max Load', value: '50 kg / m²' },
-      { label: 'Ink Channels', value: '8 Channels (CMYK + Lc + Lm + White + Varnish)' },
-      { label: 'Drying System', value: 'Sub-divided variable vacuum zone system' }
+      { label: 'Fungsi Utama', value: 'Print, Copy, Scan, Fax (Optional)' },
+      { label: 'Teknologi', value: 'Laser Colour Multifunction Printer' },
+      { label: 'Ukuran Kertas', value: 'A5 - A3' },
+      { label: 'Resolusi Cetak', value: 'Hingga 1200 x 2400 dpi' },
+      { label: 'Kecepatan Cetak', value: 'C3375: 35ppm | C5575: 55ppm | C7775: 75ppm' },
+      { label: 'Kapasitas Kertas', value: 'Hingga 5.140 Lembar' }
     ],
     features: [
-      'Simultaneous color, white, and varnish print passes',
-      'Dual guide rails for exceptionally steady carriage transit',
-      'Automatic static eliminator bar standard',
-      'Pneumatic media alignment pins for exact registration'
+      'Cetak warna berkualitas tinggi dengan kecepatan hingga 75 halaman per menit',
+      'Kapasitas kertas besar untuk volume kerja tinggi',
+      'Pengoperasian mudah melalui layar sentuh berwarna',
+      'Dukungan mobile printing dan jaringan kantor',
+      'Pemindaian dokumen berkecepatan tinggi',
+      'Mendukung ukuran kertas hingga A3'
     ],
-    tags: ['Flatbed UV', 'Architectural Glass', 'Varnish Tech'],
+    tags: ['Multifungsi', 'Laser Colour', 'High Speed'],
     isFeatured: true,
-    status: 'On Request'
+    status: 'Tersedia'
   },
   {
-    id: 'precision-printhead-x',
-    name: 'Precision Printhead X-Series',
-    category: 'spare-parts',
-    image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80',
-    shortDesc: 'Original high-density Micro-Piezo printhead replacement designed for continuous heavy production.',
-    longDesc: 'Restore factory-new performance to your commercial wide-format printers with genuine Trihanggo X-Series replacement printheads. Built using state-of-the-art silicon micro-electro-mechanical systems (MEMS) technology, guaranteeing droplets placement within sub-micron accuracy.',
+    id: 'konica-c3070',
+    name: 'Konica Minolta C3070 / C3080',
+    category: 'digital-printing',
+    image: KonicaImage,
+    shortDesc: 'Mesin produksi digital printing electrophotographic laser dengan kecepatan tinggi hingga 80 ppm untuk produksi volume besar.',
+    longDesc: 'Konica Minolta AccurioPress C3070/C3080 adalah mesin produksi profesional dengan teknologi Electrophotographic Laser untuk kualitas cetak stabil dengan resolusi tinggi. Kapasitas kertas besar untuk produktivitas tanpa henti dan integrasi mudah dengan alur kerja digital. Finishing opsional lengkap (Staple, Punch, Booklet, Folding).',
     specs: [
-      { label: 'Technology', value: 'Thin-film Piezoelectric MEMS' },
-      { label: 'Active Nozzles', value: '3,200 active nozzles (8 channels x 400 nozzles)' },
-      { label: 'Native Drop Size', value: 'Variable 1.5 - 3.8 picoliters' },
-      { label: 'Firing Frequency', value: 'Up to 50 kHz' },
-      { label: 'Compatibility', value: 'Trihanggo Apex series & major Japanese flatbed engines' }
+      { label: 'Fungsi Utama', value: 'Print, Copy, Scan' },
+      { label: 'Teknologi', value: 'Electrophotographic Laser' },
+      { label: 'Ukuran Kertas', value: 'SRA3, A3, A4' },
+      { label: 'Resolusi Cetak', value: 'Hingga 1.200 x 3.600 dpi' },
+      { label: 'Kecepatan Cetak', value: 'C3070: 70ppm | C3080: 80ppm' },
+      { label: 'Kapasitas Kertas', value: 'Hingga 15.390 Lembar' }
     ],
     features: [
-      'Proprietary gold-plated surface resists ink adherence and dust',
-      'Precision temperature sensor built-in to keep ink viscosity uniform',
-      'Compatible with water-based, solvent, and UV ink chemistries',
-      'Long lifespan rated up to 6 billion firings per nozzle'
+      'Kecepatan tinggi untuk produksi volume besar',
+      'Kualitas cetak stabil dengan resolusi tinggi',
+      'Kapasitas kertas besar untuk produktivitas tanpa henti',
+      'Finishing profesional lengkap (Opsional)',
+      'Integrasi mudah dengan alur kerja digital',
+      'Keamanan data dan kontrol pengguna yang andal'
     ],
-    tags: ['Genuine Spare', 'MEMS Tech', 'High Density'],
+    tags: ['Production', 'High Volume', 'Professional'],
+    isFeatured: true,
+    status: 'Tersedia'
+  },
+  {
+    id: 'harake-h5310tv8',
+    name: 'Mesin Jilid Panas Digital F2',
+    category: 'binding-machines',
+    image: JilidPanas,
+
+    shortDesc: 'Mesin jilid panas digital profesional dengan kontrol suhu presisi, menghasilkan jilidan yang kuat, rapi, dan efisien untuk berbagai kebutuhan dokumen.',
+
+    longDesc: 'Mesin Jilid Panas Digital F@ dirancang untuk memberikan hasil penjilidan yang cepat, kuat, dan profesional. Dilengkapi dengan panel kontrol digital untuk pengaturan suhu yang akurat, sistem pemanas yang stabil, serta desain ergonomis yang memudahkan proses kerja. Mesin ini cocok digunakan di percetakan, copy center, kantor, sekolah, instansi pemerintah, hingga industri yang membutuhkan proses penjilidan dokumen secara rutin.',
+
+    specs: [
+      { label: 'Tipe Mesin', value: 'Mesin Jilid Panas Digital' },
+      { label: 'Sistem Kontrol', value: 'Panel Digital' },
+      { label: 'Rentang Suhu', value: '120°C - 200°C' },
+      { label: 'Waktu Pemanasan', value: '± 15 Menit' },
+      { label: 'Sistem Penjepit', value: 'Elektrik Otomatis' },
+      { label: 'Aplikasi', value: 'Dokumen, Proposal, Laporan, Buku, dan Katalog' }
+    ],
+
+    features: [
+      'Panel kontrol digital yang mudah dioperasikan',
+      'Pengaturan suhu presisi untuk hasil jilid yang optimal',
+      'Pemanasan cepat dengan suhu yang stabil',
+      'Sistem penjepit otomatis untuk hasil lebih rapi',
+      'Konstruksi kokoh dan tahan lama',
+      'Cocok untuk percetakan, copy center, kantor, sekolah, dan industri'
+    ],
+
+    tags: ['Digital Binding', 'Hot Binding', 'Professional'],
+
+    isFeatured: true,
+    status: 'Tersedia'
+  },
+  {
+    id: 'binding-c30',
+    name: 'Mesin Pemotong Kertas',
+    category: 'binding-machines',
+    image: LogoMesinC30,
+    shortDesc: 'Mesin pemotong kertas presisi tinggi dengan konstruksi kokoh, mampu menghasilkan potongan rapi dan akurat untuk berbagai kebutuhan percetakan.',
+
+    longDesc: 'Mesin pemotong kertas profesional yang dirancang untuk memberikan hasil potongan presisi dengan pengoperasian yang mudah dan aman. Dilengkapi dengan pisau baja berkualitas tinggi, meja kerja yang kokoh, serta sistem pengaturan ukuran yang akurat sehingga cocok digunakan untuk kebutuhan percetakan, digital printing, percetakan offset, copy center, perkantoran, hingga industri grafika.',
+
+    specs: [
+      { label: 'Model', value: 'C30 / C50 / C70' },
+      { label: 'Lebar Potong Maks.', value: '300mm (C30) | 500mm (C50) | 700mm (C70)' },
+      { label: 'Tinggi Potong Maks.', value: '40mm (C30) | 50mm (C50/C70)' },
+      { label: 'Kapasitas Potong', value: 'Hingga 400 lembar (C30) | 500 lembar (C50) | 700 lembar (C70)' },
+      { label: 'Material Pisau', value: 'Baja berkualitas tinggi' },
+      { label: 'Sistem Pengoperasian', value: 'Manual / Semi Otomatis' }
+    ],
+
+    features: [
+      'Hasil potongan presisi dan rapi',
+      'Pisau baja berkualitas tinggi dengan daya tahan tinggi',
+      'Meja kerja kokoh dan stabil',
+      'Pengaturan ukuran potong yang mudah dan akurat',
+      'Desain ergonomis untuk meningkatkan efisiensi kerja',
+      'Cocok untuk percetakan, digital printing, copy center, kantor, dan industri grafika'
+    ],
+    tags: ['Digital Panel', 'Auto Clamp', 'Professional'],
+    isFeatured: true,
+    status: 'Tersedia'
+  },
+  {
+    id: 'harake-v5035',
+    name: 'harake-v5035',
+    category: 'binding-machines',
+    image: HarakeImage,
+    shortDesc: 'Mesin cutting stiker dengan kecepatan hingga 800 mm/s, ketebalan potong 1,2mm, dan tekanan potong 1000g dengan presisi tinggi.',
+    longDesc: 'Harake V-5035 adalah mesin stiker cutting profesional dengan cutting speed hingga 800 mm/s dan positioning accuracy ≤0,01mm. Dilengkapi LCD Touch Screen, interface USB/U-Disk/Ethernet (Optional), dan software SignMaster/FlexiSIGN. Mampu memotong material hingga 1,2mm dengan tekanan kuat hingga 1000g. Desain kompak, hemat ruang dan daya.',
+    specs: [
+      { label: 'Model', value: 'Harake V-5035' },
+      { label: 'Cutting Speed', value: 'Hingga 800 mm/s' },
+      { label: 'Cutting Thickness', value: '1,2 mm' },
+      { label: 'Cutting Pressure', value: '1000 g' },
+      { label: 'Positioning Accuracy', value: '≤ 0,01 mm' },
+      { label: 'Repeat Accuracy', value: '≤ 0,1 mm' }
+    ],
+    features: [
+      'Cutting presisi tinggi dan stabil',
+      'Kecepatan tinggi hingga 800 mm/s',
+      'Mampu memotong material hingga 1,2 mm',
+      'Tekanan potong kuat hingga 1000 g',
+      'Panel sentuh intuitif dan mudah dioperasikan',
+      'Kompatibel dengan berbagai software desain',
+      'Desain kompak, hemat ruang dan daya'
+    ],
+    tags: ['High Speed', 'Precision', 'Compact'],
     isFeatured: false,
-    status: 'In Stock'
+    status: 'Tersedia'
+  },
+  {
+    id: 'opc-drum-xerox-c60-c70',
+    name: 'OPC Drum Xerox',
+    category: 'spare-parts',
+    image: OPCDrumXerox ,
+
+    shortDesc: 'OPC Drum berkualitas tinggi untuk mesin digital printing Xerox dengan hasil cetak tajam, warna akurat, dan performa yang stabil.',
+
+    longDesc: 'OPC Drum Xerox merupakan komponen penting pada mesin digital printing yang berfungsi mentransfer gambar ke media cetak dengan presisi tinggi. Produk ini dibuat menggunakan material aluminium drum berkualitas dengan lapisan Organic Photo Conductor (OPC) sehingga menghasilkan kualitas cetak yang tajam, warna konsisten, serta daya tahan tinggi. Mudah dipasang dan kompatibel dengan berbagai seri mesin Xerox untuk kebutuhan percetakan profesional.',
+
+    specs: [
+      { label: 'Nama Produk', value: 'OPC Drum Xerox' },
+      { label: 'Jenis', value: 'OPC Drum (Organic Photo Conductor)' },
+      { label: 'Kompatibel', value: 'Xerox C60, C70, C550, C560, C570, C700, C800, 7780' },
+      { label: 'Warna', value: 'Black & Color (CMYK)' },
+      { label: 'Material', value: 'Aluminium Drum dengan lapisan OPC berkualitas tinggi' },
+      { label: 'Fungsi', value: 'Mentransfer gambar (image) ke media cetak secara presisi' },
+      { label: 'Kualitas Cetak', value: 'Tajam, akurat, dan konsisten' },
+      { label: 'Daya Tahan', value: 'Performa stabil untuk penggunaan jangka panjang' },
+      { label: 'Pemasangan', value: 'Mudah dipasang dan siap digunakan' },
+      { label: 'Kondisi', value: 'Baru 100%' }
+    ],
+
+    features: [
+      'Kompatibel dengan mesin Xerox seri C60, C70, C550, C560, C570, C700, C800, dan 7780',
+      'Menghasilkan cetakan tajam dan warna yang akurat',
+      'Material OPC berkualitas tinggi dengan umur pakai yang panjang',
+      'Performa stabil untuk kebutuhan produksi volume tinggi',
+      'Pemasangan mudah tanpa modifikasi',
+      'Ideal untuk percetakan digital, copy center, dan industri grafika'
+    ],
+
+    tags: [
+      'Xerox',
+      'OPC Drum',
+      'Sparepart',
+      'Digital Printing',
+      'Black',
+      'CMYK'
+    ],
+
+    isFeatured: true,
+    status: 'Tersedia'
   }
 ];
 
 export const COMPANY_GROWTH_TIMELINE: Milestone[] = [
   {
     year: '2012',
-    title: 'The Foundation',
-    description: 'Trihanggo was established with a small passionate team of maintenance engineers, offering premium spare parts and emergency support for commercial pressrooms.',
-    badge: 'Inception'
+    title: 'Pendirian',
+    description: 'Trihanggo didirikan oleh tim kecil insinyur pemeliharaan yang berdedikasi, menawarkan suku cadang premium dan dukungan darurat untuk ruang cetak komersial.',
+    badge: 'Awal Mula'
   },
   {
     year: '2016',
-    title: 'National Distribution & Inks',
-    description: 'We secured exclusive partnerships for premium industrial inks, launching our state-of-the-art color profile lab to serve major printing houses nationwide.',
-    badge: 'Expansion'
+    title: 'Distribusi Nasional & Tinta',
+    description: 'Kami mengamankan kemitraan eksklusif untuk tinta industrial premium, meluncurkan laboratorium profil warna canggih kami untuk melayani perusahaan percetakan besar di seluruh Indonesia.',
+    badge: 'Ekspansi'
   },
   {
     year: '2020',
-    title: 'The Apex Launch',
-    description: 'Venturing into direct manufacturing integration, Trihanggo introduced the first-generation Apex large-format UV printers, immediately capturing industrial market share.',
-    badge: 'Innovation'
+    title: 'Peluncuran Apex',
+    description: 'Memasuki integrasi manufaktur langsung, Trihanggo memperkenalkan printer UV format besar generasi pertama Apex, langsung merebut pangsa pasar industrial.',
+    badge: 'Inovasi'
   },
   {
     year: '2026',
-    title: 'Smart Printing Solutions',
-    description: 'Today, Trihanggo is a trusted full-stack machinery, software, and consumable leader, empowering high-volume packaging, textile, and signage industries with remote cloud diagnostics.',
-    badge: 'Modern Leadership'
+    title: 'Solusi Cetak Cerdas',
+    description: 'Kini, Trihanggo adalah pemimpin terpercaya di bidang mesin, perangkat lunak, dan konsumabel, memberdayakan industri kemasan, tekstil, dan signage volume tinggi dengan diagnostik cloud jarak jauh.',
+    badge: 'Kepemimpinan Modern'
   }
 ];
 
 export const BRAND_PARTNERS: Partner[] = [
-  { id: '1', name: 'Mutoh', logo: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=300&q=80' },
-  { id: '2', name: 'Ricoh', logo: 'https://images.unsplash.com/photo-1618005198143-e5283b519a7f?auto=format&fit=crop&w=300&q=80' },
-  { id: '3', name: 'Epson', logo: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=300&q=80' },
-  { id: '4', name: 'Kyocera', logo: 'https://images.unsplash.com/photo-1579783928621-7a13d66a62d1?auto=format&fit=crop&w=300&q=80' },
-  { id: '5', name: 'X-Rite', logo: 'https://images.unsplash.com/photo-1604871000636-074fa5117945?auto=format&fit=crop&w=300&q=80' },
-  { id: '6', name: 'Phoseon', logo: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=300&q=80' }
+  { id: '1', name: 'Mutoh', logo: Mutoh },
+  { id: '2', name: 'Ricoh', logo: Ricoh},
+  { id: '3', name: 'Epson', logo: Corporate},
+  { id: '4', name: 'Kyocera', logo: Kyocera},
+  { id: '5', name: 'X-Rite', logo: xrp},
+  { id: '6', name: 'Phoseon', logo: Phoseon}
 ];
 
 export const WHY_CHOOSE_US: FeatureBlock[] = [
   {
     id: 'trusted-supplier',
-    title: 'Trusted Supplier',
-    description: 'With over a decade of dedication to commercial print excellence, we are the go-to machinery partner for the region’s premier packaging and publishing groups.',
+    title: 'Pemasok Terpercaya',
+    description: 'Dengan lebih dari satu dekade dedikasi terhadap keunggulan cetak komersial, kami adalah mitra mesin pilihan utama bagi grup pengemasan dan penerbitan terkemuka di kawasan ini.',
     icon: 'ShieldCheck',
     colorClass: 'from-red-500/10 to-red-500/5 hover:border-red-500'
   },
   {
     id: 'genuine-products',
-    title: 'Genuine Certified Products',
-    description: 'Zero clones. Zero gray market risks. Every nozzle, ink bottle, guide rail, and electronic board carries direct manufacturer warranties and full QA clearance.',
+    title: 'Produk Asli Bersertifikat',
+    description: 'Nol produk tiruan. Nol risiko pasar abu-abu. Setiap nozzle, botol tinta, rel pemandu, dan papan elektronik membawa garansi pabrikan langsung dan clearance QA penuh.',
     icon: 'CheckCircle',
     colorClass: 'from-amber-500/10 to-amber-500/5 hover:border-amber-500'
   },
   {
     id: 'competitive-pricing',
-    title: 'Competitive Direct Pricing',
-    description: 'Through factory-direct procurement channels and centralized logistics pipelines, we supply state-of-the-art tech setups with optimized capital investment models.',
+    title: 'Harga Langsung Kompetitif',
+    description: 'Melalui saluran pengadaan langsung pabrik dan jalur logistik terpusat, kami menyediakan setup teknologi terkini dengan model investasi modal yang dioptimalkan.',
     icon: 'TrendingUp',
     colorClass: 'from-emerald-500/10 to-emerald-500/5 hover:border-emerald-500'
   },
   {
     id: 'fast-delivery',
-    title: 'High-Speed Secure Delivery',
-    description: 'Our climate-controlled warehouse centers house over 1,500 spare parts and inks, ready for same-day dispatch to keep your production arrays humming.',
+    title: 'Pengiriman Cepat & Aman',
+    description: 'Pusat gudang ber-AC kami menyimpan lebih dari 1.500 suku cadang dan tinta, siap kirim di hari yang sama untuk menjaga lini produksi Anda tetap berjalan.',
     icon: 'Truck',
     colorClass: 'from-blue-500/10 to-blue-500/5 hover:border-blue-500'
   },
   {
     id: 'technical-support',
-    title: '24/7 Professional SLA Support',
-    description: 'Backed by factory-certified field engineers on call round-the-clock, resolving issues remotely or arriving onsite within specified SLA timeframes.',
+    title: 'Dukungan SLA Profesional 24/7',
+    description: 'Didukung oleh insinyur lapangan bersertifikat pabrik yang siaga sepanjang waktu, menyelesaikan masalah secara remote atau tiba di lokasi dalam kerangka waktu SLA yang ditentukan.',
     icon: 'Wrench',
     colorClass: 'from-indigo-500/10 to-indigo-500/5 hover:border-indigo-500'
   },
   {
     id: 'warranty-service',
-    title: 'Extended Warranty Services',
-    description: 'Flexible machine protection bundles including preventative health audits, printhead insurance plans, and customized operations training certifications.',
+    title: 'Layanan Garansi Diperpanjang',
+    description: 'Paket perlindungan mesin fleksibel termasuk audit kesehatan preventif, rencana asuransi printhead, dan sertifikasi pelatihan operasional yang disesuaikan.',
     icon: 'Award',
     colorClass: 'from-purple-500/10 to-purple-500/5 hover:border-purple-500'
   }
@@ -260,27 +359,27 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     id: 'test-1',
     name: 'Andri Wijaya',
-    role: 'Production Director',
+    role: 'Direktur Produksi',
     company: 'Sinar Indah Packaging',
-    content: 'Upgrading our facility with three Trihanggo Apex-9000 units revolutionized our production cycle. Our average uptime jumped to a spectacular 98.4%, and the color consistency across multi-batch retail packaging jobs is unmatched in the market.',
+    content: 'Meningkatkan fasilitas kami dengan tiga unit Trihanggo Apex-9000 merevolusi siklus produksi kami. Rata-rata uptime kami melonjak hingga 98,4%, dan konsistensi warna pada pekerjaan kemasan ritel multi-batch tidak tertandingi di pasar.',
     rating: 5,
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80'
   },
   {
     id: 'test-2',
     name: 'Siti Rahmawati',
-    role: 'CEO & Founder',
+    role: 'CEO & Pendiri',
     company: 'VividSign Solutions',
-    content: 'What makes Trihanggo incredible isn’t just their advanced UV flatbed machines; it’s their absolute dedication to SLA technical support. When we had a custom profile issue during a massive stadium graphic campaign, their engineers stayed on site until 3 AM to resolve it.',
+    content: 'Yang membuat Trihanggo luar biasa bukan hanya mesin UV flatbed canggih mereka, tetapi juga dedikasi penuh terhadap dukungan teknis SLA. Saat kami mengalami masalah profil kustom selama kampanye grafis stadion besar, insinyur mereka tetap di lokasi hingga pukul 3 pagi untuk menyelesaikannya.',
     rating: 5,
     avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80'
   },
   {
     id: 'test-3',
     name: 'Budi Santoso',
-    role: 'Operations Lead',
+    role: 'Kepala Operasional',
     company: 'Nusantara Textile Lab',
-    content: 'We use Trihanggo specialized sublimation inks and custom paper consumables on an industrial scale. The print resolution is phenomenally sharp, and nozzle clogging is practically non-existent. Our printhead replacement frequency has cut in half.',
+    content: 'Kami menggunakan tinta sublimasi khusus Trihanggo dan konsumabel kertas kustom dalam skala industrial. Resolusi cetak sangat tajam, dan penyumbatan nozzle hampir tidak pernah terjadi. Frekuensi penggantian printhead kami berkurang setengahnya.',
     rating: 5,
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&h=150&q=80'
   }

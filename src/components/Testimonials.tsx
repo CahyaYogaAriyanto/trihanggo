@@ -59,12 +59,11 @@ export const Testimonials: React.FC = () => {
                 </span>
               </div>
               <h2 className="text-brand-dark text-3xl sm:text-4xl md:text-5xl font-display font-extrabold tracking-tight leading-[1.1]">
-                Endorsed by Top Operators
+                Pilihan Utama Para Profesional Industri
               </h2>
             </div>
-
             <p className="text-gray-500 text-sm leading-relaxed font-sans">
-              Discover why Southeast Asia’s leading commercial printers, packaging centers, and design agencies trust Trihanggo for hardware deployment and daily SLA support.
+              Bergabunglah dengan berbagai perusahaan percetakan, digital printing, dan industri grafika yang mempercayakan kebutuhan mesin, sparepart, consumable, serta dukungan teknis profesional kepada Trihanggo.
             </p>
 
             {/* Custom Carousel Slider Buttons */}

@@ -41,7 +41,7 @@ export const CTA: React.FC<CTAProps> = ({ onOpenQuote, onScrollToSection }) => {
         >
           <ShieldCheck className="w-4 h-4 text-brand-red" />
           <span className="text-[10px] font-display tracking-widest text-white/80 font-bold uppercase">
-            No Commitment Required • Instant Online Appraisals
+            Tanpa Komitmen • Dapatkan Estimasi dan Konsultasi Online Secara Instan
           </span>
         </motion.div>
 
@@ -53,8 +53,8 @@ export const CTA: React.FC<CTAProps> = ({ onOpenQuote, onScrollToSection }) => {
           transition={{ duration: 0.8, delay: 0.1 }}
           className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-black tracking-tighter leading-[1.08] max-w-4xl mx-auto uppercase"
         >
-          Ready to Upgrade Your <br />
-          Printing Business?
+          Siap Meningkatkan <br />
+          Bisnis Percetakan Anda?
         </motion.h2>
 
         {/* Short copy */}
@@ -65,7 +65,7 @@ export const CTA: React.FC<CTAProps> = ({ onOpenQuote, onScrollToSection }) => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-white/70 text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed"
         >
-          Request a personalized commercial pricing package with local shipment schedules. Our field engineers will prepare a full cost-benefit projection report for your review.
+          Dapatkan penawaran harga yang disesuaikan dengan kebutuhan bisnis Anda, beserta informasi jadwal pengiriman lokal. Tim engineer kami siap memberikan konsultasi dan solusi terbaik untuk mendukung bisnis percetakan Anda.
         </motion.p>
 
         {/* Action button groupings */}
@@ -81,14 +81,14 @@ export const CTA: React.FC<CTAProps> = ({ onOpenQuote, onScrollToSection }) => {
             className="w-full sm:w-auto bg-brand-red hover:bg-red-700 text-white font-display font-bold text-[10px] tracking-widest uppercase px-10 py-4.5 rounded-sm flex items-center justify-center gap-2.5 transition-all shadow-xl hover:scale-[1.02] cursor-pointer"
           >
             <FileText className="w-4 h-4" />
-            <span>Request Proposal</span>
+            <span>Ajukan Proposal</span>
           </button>
 
           <button
             onClick={() => onScrollToSection('catalog')}
             className="w-full sm:w-auto bg-transparent hover:bg-white/5 border border-white/20 text-white font-display font-bold text-[10px] tracking-widest uppercase px-10 py-4.5 rounded-sm flex items-center justify-center gap-2 transition-all hover:scale-[1.02] cursor-pointer"
           >
-            <span>View Catalog</span>
+            <span>Lihat Katalog</span>
             <ArrowUpRight className="w-4 h-4 text-white/50" />
           </button>
         </motion.div>
@@ -102,7 +102,7 @@ export const CTA: React.FC<CTAProps> = ({ onOpenQuote, onScrollToSection }) => {
           className="flex justify-center items-center gap-2 text-xs text-white/40 pt-4"
         >
           <HelpCircle className="w-4 h-4" />
-          <span>Need custom specs? Chat with our engineers on WhatsApp directly</span>
+          <span>Butuh spesifikasi khusus? Hubungi tim engineer kami langsung melalui WhatsApp.</span>
         </motion.div>
 
       </div>

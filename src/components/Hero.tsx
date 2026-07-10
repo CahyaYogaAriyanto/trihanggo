@@ -37,7 +37,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuote, onScrollToSection }) =>
           <div className="flex items-center gap-3">
             <div className="w-12 h-[1px] bg-brand-red" />
             <span className="text-xs font-bold uppercase tracking-[0.4em] text-brand-red font-display">
-              Industrial Precision
+              Presisi Industrial
             </span>
           </div>
 
@@ -48,14 +48,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuote, onScrollToSection }) =>
             transition={{ duration: 0.8, delay: 0.1 }}
             className="hero-text font-display font-extrabold text-[44px] sm:text-[54px] md:text-[72px] lg:text-[80px] text-brand-dark leading-[0.9] tracking-tighter"
           >
-            Professional<br />
-            Printing<br />
-            <span className="text-brand-red">Solutions.</span>
+            Solusi<br />
+            Percetakan<br />
+            <span className="text-brand-red">Profesional.</span>
           </motion.h1>
 
           {/* Body Description */}
           <p className="max-w-md text-gray-500 font-medium leading-relaxed font-sans">
-            Providing high-quality wide-format machines, premium consumables, and certified technical support tailored for high-volume modern industrial excellence.
+            Menyediakan mesin wide-format berkualitas tinggi, konsumabel premium, dan dukungan teknis bersertifikat untuk keunggulan industrial modern volume tinggi.
           </p>
 
           {/* Action CTAs */}
@@ -64,14 +64,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuote, onScrollToSection }) =>
               onClick={() => onScrollToSection('catalog')}
               className="bg-brand-dark text-white px-8 py-4 sm:px-10 sm:py-5 font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-brand-red transition-all cursor-pointer shadow-lg hover:shadow-brand-red/10"
             >
-              Explore Catalog
+              Lihat Katalog
             </button>
 
             <button
               onClick={onOpenQuote}
               className="bg-white text-brand-dark border border-gray-300 hover:border-brand-red hover:text-brand-red px-8 py-4 sm:px-10 sm:py-5 font-bold uppercase text-xs tracking-widest rounded-sm transition-all cursor-pointer shadow-md"
             >
-              Request Quote
+              Minta Penawaran
             </button>
           </div>
 
@@ -79,15 +79,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuote, onScrollToSection }) =>
           <div className="grid grid-cols-3 gap-8 pt-6 border-t border-gray-200">
             <div className="space-y-1">
               <div className="text-2xl sm:text-3xl font-display font-black text-brand-dark">500+</div>
-              <div className="text-[9px] uppercase font-bold text-gray-400 tracking-wider">Machines Installed</div>
+              <div className="text-[9px] uppercase font-bold text-gray-400 tracking-wider">Mesin Terpasang</div>
             </div>
             <div className="space-y-1">
               <div className="text-2xl sm:text-3xl font-display font-black text-brand-dark">12k</div>
-              <div className="text-[9px] uppercase font-bold text-gray-400 tracking-wider">Service Hours</div>
+              <div className="text-[9px] uppercase font-bold text-gray-400 tracking-wider">Jam Servis</div>
             </div>
             <div className="space-y-1">
               <div className="text-2xl sm:text-3xl font-display font-black text-brand-dark">24/7</div>
-              <div className="text-[9px] uppercase font-bold text-gray-400 tracking-wider">Support Center</div>
+              <div className="text-[9px] uppercase font-bold text-gray-400 tracking-wider">Pusat Dukungan</div>
             </div>
           </div>
         </div>

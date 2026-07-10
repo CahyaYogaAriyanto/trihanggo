@@ -47,8 +47,8 @@ export const About: React.FC = () => {
                   14+
                 </div>
                 <div>
-                  <span className="block text-gray-900 font-bold text-sm">Years of Print Mastery</span>
-                  <span className="block text-gray-500 text-xs font-mono tracking-wider uppercase">Established 2012</span>
+                  <span className="block text-gray-900 font-bold text-sm">Tahun Keahlian Cetak</span>
+                  <span className="block text-gray-500 text-xs font-mono tracking-wider uppercase">Berdiri Sejak 2012</span>
                 </div>
               </div>
             </motion.div>
@@ -63,11 +63,11 @@ export const About: React.FC = () => {
             >
               <div className="flex items-center gap-2 text-red-500 mb-2">
                 <Users className="w-5 h-5 animate-bounce" />
-                <span className="text-[10px] font-mono tracking-widest uppercase font-bold text-red-400">Our Network</span>
+                <span className="text-[10px] font-mono tracking-widest uppercase font-bold text-red-400">Jaringan Kami</span>
               </div>
-              <h4 className="text-2xl font-bold tracking-tight">1,200+</h4>
+              <h4 className="text-2xl font-bold tracking-tight">1.200+</h4>
               <p className="text-gray-400 text-xs mt-1 leading-relaxed">
-                Active industrial printers serviced across Southeast Asia.
+                Printer industrial aktif yang diservis di seluruh Asia Tenggara.
               </p>
             </motion.div>
 
@@ -93,20 +93,20 @@ export const About: React.FC = () => {
               <div className="flex items-center gap-3">
                 <div className="w-12 h-[1px] bg-brand-red" />
                 <span className="text-xs font-bold uppercase tracking-[0.4em] text-brand-red font-display">
-                  About Trihanggo
+                  Tentang Trihanggo
                 </span>
               </div>
               <h2 className="text-brand-dark text-3xl sm:text-4xl md:text-5xl font-display font-extrabold tracking-tight leading-[1.1]">
-                Redefining the Engineering Boundaries of Print Media
+                Menghadirkan Inovasi Teknologi untuk Masa Depan Industri Media Cetak.
               </h2>
             </div>
 
             <div className="space-y-4 text-gray-600 text-sm md:text-base leading-relaxed font-sans">
               <p>
-                Trihanggo is a high-precision, B2B engineering and distribution company. We don’t just deliver machines; we build optimized, full-stack, long-term commercial pipelines. We partner with the world’s leading digital and industrial manufacturers to source genuine hardware and consumables.
+                Trihanggo merupakan penyedia mesin digital printing, mesin finishing, serta berbagai kebutuhan industri percetakan yang terpercaya di Sulawesi Utara. Dengan pengalaman lebih dari 10 tahun, kami berkomitmen menghadirkan solusi teknologi percetakan modern melalui produk berkualitas, layanan profesional, dan dukungan teknis yang andal. Kami juga menyediakan suku cadang (sparepart), consumable, serta layanan purna jual untuk memastikan setiap mesin beroperasi secara optimal. Didukung jaringan pemasok global dan distribusi yang luas, Trihanggo terus menjadi mitra strategis bagi pelaku industri percetakan dengan mengutamakan kualitas, inovasi, harga yang kompetitif, serta kepuasan pelanggan.
               </p>
               <p className="font-semibold text-gray-800">
-                "Our single objective is eliminating downtime. If your paper rolls or flatbeds stop rotating, your capital stands still. We configure complete operations ecosystems to keep you printing."
+                Tujuan kami hanya satu: menghilangkan downtime. Saat mesin roll paper maupun flatbed Anda berhenti beroperasi, produktivitas dan investasi bisnis ikut terhenti. Oleh karena itu, kami menghadirkan ekosistem operasional yang lengkap agar proses pencetakan Anda tetap berjalan lancar, efisien, dan tanpa hambatan.
               </p>
             </div>
 

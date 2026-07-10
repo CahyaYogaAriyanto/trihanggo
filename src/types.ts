@@ -14,7 +14,7 @@ export interface Product {
   features: string[];
   tags: string[];
   isFeatured: boolean;
-  status: 'Available' | 'In Stock' | 'On Request';
+  status: 'Available' | 'In Stock' | 'On Request' | 'Tersedia' | 'Berdasarkan Permintaan';
 }
 
 export interface ProductCategory {

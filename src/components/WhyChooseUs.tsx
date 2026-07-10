@@ -44,10 +44,10 @@ export const WhyChooseUs: React.FC = () => {
                 </span>
               </div>
               <h3 className="text-white text-3xl sm:text-4xl font-display font-extrabold tracking-tighter leading-[1.1]">
-                Optimizing Every Aspect of Industrial Media
+                Solusi Terbaik untuk Mengoptimalkan Industri Percetakan Modern
               </h3>
               <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
-                By maintaining a massive inventory of original components, inks, and backup engineering lines, Trihanggo has reduced client downtime averages from 18 hours to under 3.
+                Trihanggo memastikan ketersediaan sparepart original, consumable berkualitas, dan layanan teknis profesional untuk membantu menjaga produktivitas serta meminimalkan gangguan operasional pelanggan.
               </p>
             </div>
 
@@ -55,16 +55,16 @@ export const WhyChooseUs: React.FC = () => {
             <div className="mt-12 space-y-5 relative z-10 pt-8 border-t border-white/5">
               <div className="flex justify-between items-center bg-black/40 p-4 rounded-xl border border-white/5 hover:border-brand-red/30 transition-colors text-left">
                 <div>
-                  <span className="block text-[8px] font-mono text-white/40 uppercase">Average Machinery Uptime</span>
-                  <span className="text-white text-xl font-display font-black">99.4%</span>
+                  <span className="block text-[8px] font-mono text-white/40 uppercase"> Produk Berkualitas</span>
+                  <span className="text-white text-xl font-display font-black">100%</span>
                 </div>
                 <div className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
               </div>
 
               <div className="flex justify-between items-center bg-black/40 p-4 rounded-xl border border-white/5 hover:border-brand-red/30 transition-colors text-left">
                 <div>
-                  <span className="block text-[8px] font-mono text-white/40 uppercase">SLA Maintenance Response</span>
-                  <span className="text-white text-xl font-display font-black">&lt; 3 Hours</span>
+                  <span className="block text-[8px] font-mono text-white/40 uppercase">Dukungan Teknis</span>
+                  <span className="text-white text-xl font-display font-black">&lt; Siap Membantu</span>
                 </div>
                 <span className="text-brand-red text-xs font-mono font-bold">PT Trihanggo</span>
               </div>

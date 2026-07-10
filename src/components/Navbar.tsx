@@ -8,7 +8,7 @@ import { Search, Phone, FileText, Menu, X, ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import Logo from '../assets/images/Logo_Trihanggo.png';
 
-interface NavbarProps {
+interface NavbarProps {         
   onOpenSearch: () => void;
   onOpenQuote: () => void;
   onScrollToSection: (sectionId: string) => void;
@@ -31,11 +31,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch, onOpenQuote, onScr
   }, []);
 
   const navItems = [
-    { label: 'Home', id: 'home' },
-    { label: 'About', id: 'about' },
-    { label: 'Catalog', id: 'catalog' },
-    { label: 'Why Us', id: 'why-us' },
-    { label: 'Reviews', id: 'reviews' },
+    { label: 'Beranda', id: 'home' },
+    { label: 'Tentang', id: 'about' },
+    { label: 'Katalog', id: 'catalog' },
+    { label: 'Keunggulan', id: 'why-us' },
+    { label: 'Ulasan', id: 'reviews' },
   ];
 
   return (
@@ -93,7 +93,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch, onOpenQuote, onScr
               className="flex items-center gap-2 px-4.5 py-2.5 rounded-full font-display font-bold text-[11px] tracking-wider uppercase transition-all duration-300 bg-emerald-50 text-emerald-700 hover:bg-emerald-100 border border-emerald-100 shadow-sm"
             >
               <Phone className="w-3 h-3 animate-pulse text-emerald-600" />
-              <span>WhatsApp Sales</span>
+              <span>WhatsApp</span>
             </a>
 
             {/* Quote Request CTA */}
