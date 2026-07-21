@@ -7,7 +7,7 @@ import { Product, ProductCategory, Milestone, Partner, Testimonial, FeatureBlock
 
 // Import local images so Vite can process and hash them correctly at build time
 import HERO_IMAGE from './assets/images/trihanggo_hero_1783583587771.jpg';
-import ABOUT_IMAGE from './assets/images/trihanggo_about_1783583606004.jpg';
+import ABOUT_IMAGE from './assets/images/kantor_trihanggo.jpg';
 import PRINTER_IMAGE from './assets/images/mesinDIgitalprinting.png';
 import INK_IMAGE from './assets/images/trihanggo_ink_1783583633164.jpg';
 import KonicaImage from './assets/images/KonicaMinoltaC3070-C3080.png';

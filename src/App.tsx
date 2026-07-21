@@ -8,7 +8,10 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { Categories } from './components/Categories';
-import { Catalog } from './components/Catalog';
+import { Layanan } from './components/Layanan';
+import { Service } from './components/Service';
+import { Sparepart } from './components/Sparepart';
+import { ZeroGrounding } from './components/ZeroGrounding';
 import { WhyChooseUs } from './components/WhyChooseUs';
 import { Partners } from './components/Partners';
 import { Testimonials } from './components/Testimonials';
@@ -75,12 +78,17 @@ export default function App() {
         <Categories onSelectCategory={handleSelectCategory} />
 
         {/* Alternating Featured Catalog Showcase */}
-        <Catalog
+        <Layanan
           activeFilter={activeCatalogFilter}
           setActiveFilter={setActiveCatalogFilter}
           onOpenProductDetails={setSelectedProduct}
           onOpenQuoteWithProduct={handleOpenQuoteWithProduct}
         />
+
+        {/* Layanan Tambahan */}
+        <Service />
+        <Sparepart />
+        <ZeroGrounding />
 
         {/* Core Value Proposition Advantage Bento */}
         <WhyChooseUs />

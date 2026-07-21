@@ -9,14 +9,14 @@ import { CheckCircle, Eye, FileText, ChevronRight, Settings, Info, ShoppingBag }
 import { FEATURED_PRODUCTS } from '../data';
 import { Product } from '../types';
 
-interface CatalogProps {
+interface LayananProps {
   activeFilter: string;
   setActiveFilter: (filterId: string) => void;
   onOpenProductDetails: (product: Product) => void;
   onOpenQuoteWithProduct: (product: Product) => void;
 }
 
-export const Catalog: React.FC<CatalogProps> = ({
+export const Layanan: React.FC<LayananProps> = ({
   activeFilter,
   setActiveFilter,
   onOpenProductDetails,
@@ -50,7 +50,7 @@ export const Catalog: React.FC<CatalogProps> = ({
           <div className="flex items-center gap-3 justify-center">
             <div className="w-12 h-[1px] bg-brand-red" />
             <span className="text-xs font-bold uppercase tracking-[0.4em] text-brand-red font-display">
-              Katalog Mesin Bersertifikasi
+              Layanan Kami
             </span>
           </div>
           <h2 className="text-brand-dark text-3xl sm:text-4xl md:text-5xl font-display font-extrabold tracking-tight">

@@ -6,7 +6,7 @@
 import React from 'react';
 import { ChevronRight, Play, Shield, Activity, Award } from 'lucide-react';
 import { motion } from 'motion/react';
-import { HERO_IMAGE } from '../data';
+import { PRINTER_IMAGE } from '../data';
 
 interface HeroProps {
   onOpenQuote: () => void;
@@ -29,10 +29,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuote, onScrollToSection }) =>
 
       {/* Main Grid Layout */}
       <div className="max-w-7xl mx-auto px-6 md:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center relative z-10">
-        
+
         {/* Left Column - Industrial Precision Typography */}
         <div className="lg:col-span-7 text-left space-y-6 md:space-y-8">
-          
+
           {/* Accent Overline */}
           <div className="flex items-center gap-3">
             <div className="w-12 h-[1px] bg-brand-red" />
@@ -94,7 +94,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuote, onScrollToSection }) =>
 
         {/* Right Column - Layered Featured Card Showcase */}
         <div className="lg:col-span-5 relative flex flex-col gap-6 items-center lg:items-end">
-          
+
           {/* Main Card */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
@@ -112,13 +112,13 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuote, onScrollToSection }) =>
             {/* High-res Image Wrapper */}
             <div className="aspect-video bg-gray-50 rounded-lg mb-4 flex items-center justify-center overflow-hidden border border-gray-100 relative group">
               <img
-                src={HERO_IMAGE}
+                src={PRINTER_IMAGE}
                 alt="Trihanggo Industrial Printing Machine"
                 referrerPolicy="no-referrer"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                className="w-full h-full object-contain p-8 group-hover:scale-105 transition-transform duration-700 ease-out"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
-              
+
               {/* Floating Speed Output Overlay */}
               <div className="absolute bottom-2.5 right-2.5 bg-black/70 backdrop-blur-md rounded-md py-1 px-2 text-white text-[8px] font-mono uppercase tracking-wider">
                 180 m²/h Continuous Speed
@@ -126,10 +126,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuote, onScrollToSection }) =>
             </div>
 
             <h3 className="font-display font-extrabold text-lg text-brand-dark">
-              Pro-X 500 Industrial
+              Xerox Office C3375 / C5575 / C7775
             </h3>
             <p className="text-xs text-gray-400 font-medium mb-4 leading-relaxed">
-             Seri mesin digital wide-format inkjet yang dirancang untuk pencetakan tekstil, banner, dan vinyl dengan kecepatan tinggi serta performa yang stabil untuk kebutuhan produksi industri.
+              Seri mesin digital multifungsi laser colour yang dirancang untuk pencetakan  dengan kecepatan tinggi serta performa yang stabil untuk kebutuhan produksi industri.
             </p>
 
             <button
@@ -142,7 +142,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuote, onScrollToSection }) =>
 
           {/* Sub-card Row */}
           <div className="grid grid-cols-2 gap-4 w-full max-w-[420px] h-36">
-            
+
             {/* Ink sub-card (Dark/Glass tone) */}
             <div className="bg-[#1A1A1A] text-white p-4.5 rounded-2xl flex flex-col justify-end relative overflow-hidden">
               <div className="absolute top-4 right-4 text-white/10 font-display font-black text-4xl">INK</div>

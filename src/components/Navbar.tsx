@@ -4,7 +4,7 @@
  */
 
 import React, { useState, useEffect } from 'react';
-import { Search, Phone, FileText, Menu, X, ArrowRight } from 'lucide-react';
+import { Search, Phone, FileText, Menu, X, ArrowRight, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import Logo from '../assets/images/Logo_Trihanggo.png';
 
@@ -33,7 +33,16 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch, onOpenQuote, onScr
   const navItems = [
     { label: 'Beranda', id: 'home' },
     { label: 'Tentang', id: 'about' },
-    { label: 'Katalog', id: 'catalog' },
+    { 
+      label: 'Layanan', 
+      id: 'catalog',
+      subItems: [
+        { label: 'Katalog Mesin', id: 'catalog' },
+        { label: 'Service', id: 'service' },
+        { label: 'Sparepart', id: 'sparepart' },
+        { label: 'Zero Grounding', id: 'zero-grounding' }
+      ]
+    },
     { label: 'Keunggulan', id: 'why-us' },
     { label: 'Ulasan', id: 'reviews' },
   ];
@@ -63,14 +72,29 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch, onOpenQuote, onScr
           {/* Desktop Navigation Links */}
           <div className="hidden lg:flex items-center gap-8">
             {navItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => onScrollToSection(item.id)}
-                className="text-sm font-display font-bold uppercase tracking-widest text-gray-600 hover:text-brand-red transition-colors relative py-1.5 group cursor-pointer"
-              >
-                {item.label}
-                <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-brand-red transition-all duration-300 group-hover:w-full" />
-              </button>
+              <div key={item.id} className="relative group">
+                <button
+                  onClick={() => !item.subItems && onScrollToSection(item.id)}
+                  className="text-sm font-display font-bold uppercase tracking-widest text-gray-600 hover:text-brand-red transition-colors relative py-1.5 cursor-pointer flex items-center gap-1"
+                >
+                  {item.label}
+                  {item.subItems && <ChevronDown className="w-4 h-4 opacity-50" />}
+                  <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-brand-red transition-all duration-300 group-hover:w-full" />
+                </button>
+                {item.subItems && (
+                  <div className="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-100 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 flex flex-col overflow-hidden">
+                    {item.subItems.map(sub => (
+                      <button
+                        key={sub.id}
+                        onClick={() => onScrollToSection(sub.id)}
+                        className="text-left px-4 py-3 text-xs font-display font-bold uppercase tracking-wider text-gray-600 hover:bg-gray-50 hover:text-brand-red transition-colors"
+                      >
+                        {sub.label}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
             ))}
           </div>
 
@@ -154,17 +178,38 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch, onOpenQuote, onScr
                 {/* Nav Links */}
                 <div className="flex flex-col gap-5">
                   {navItems.map((item) => (
-                    <button
-                      key={item.id}
-                      onClick={() => {
-                        setMobileMenuOpen(false);
-                        onScrollToSection(item.id);
-                      }}
-                      className="text-left text-white/80 hover:text-white text-base font-sans font-medium py-1.5 border-b border-white/5 flex items-center justify-between group"
-                    >
-                      <span>{item.label}</span>
-                      <ArrowRight className="w-4 h-4 text-red-500 opacity-0 group-hover:opacity-100 transition-opacity" />
-                    </button>
+                    <div key={item.id}>
+                      <button
+                        onClick={() => {
+                          if (!item.subItems) {
+                            setMobileMenuOpen(false);
+                            onScrollToSection(item.id);
+                          }
+                        }}
+                        className="w-full text-left text-white/80 hover:text-white text-base font-sans font-medium py-1.5 border-b border-white/5 flex items-center justify-between group"
+                      >
+                        <span>{item.label}</span>
+                        {!item.subItems && <ArrowRight className="w-4 h-4 text-red-500 opacity-0 group-hover:opacity-100 transition-opacity" />}
+                        {item.subItems && <ChevronDown className="w-4 h-4 text-white/50" />}
+                      </button>
+                      {item.subItems && (
+                        <div className="flex flex-col gap-3 pl-4 mt-3">
+                          {item.subItems.map(sub => (
+                            <button
+                              key={sub.id}
+                              onClick={() => {
+                                setMobileMenuOpen(false);
+                                onScrollToSection(sub.id);
+                              }}
+                              className="w-full text-left text-white/60 hover:text-white text-sm font-sans flex items-center justify-between group"
+                            >
+                              <span>{sub.label}</span>
+                              <ArrowRight className="w-3 h-3 text-red-500 opacity-0 group-hover:opacity-100 transition-opacity" />
+                            </button>
+                          ))}
+                        </div>
+                      )}
+                    </div>
                   ))}
                 </div>
               </div>
