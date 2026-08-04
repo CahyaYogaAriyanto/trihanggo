@@ -107,9 +107,12 @@ export const Footer: React.FC<FooterProps> = ({ onScrollToSection }) => {
                   (Belakang Kantor Pusat Politeknik Negeri Manado)
                 </span>
               </li>
-              <li className="flex items-center gap-3">
+              <li className="flex flex-column items-center gap-3">
                 <Phone className="w-4 h-4 text-red-500 flex-shrink-0" />
-                <span>+62 812-3456-7890</span>
+                  <div className="flex flex-col">
+                    <span>+62 812-3456-7890 (admin 1)</span>
+                    <span>+62 821-9540-4022 (admin 2)</span>
+                  </div>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-red-500 flex-shrink-0" />
